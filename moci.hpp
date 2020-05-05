@@ -75,7 +75,7 @@ public:
     }
 };
 
-void citajMoci(Moc moc[])
+void vadiFajl(Moc moc[])
 {
     string ime="Moc_Lista.txt";
     string linija;
@@ -114,5 +114,24 @@ void citajMoci(Moc moc[])
         cout << "Error #1";
 
 }
+void citajFaijlMoci(Moc moc[])
+{
+    string ime="Moc_Lista.txt";
+    string linija;
+    string pomocna;
+    ifstream fajl (ime);
+    if (fajl.is_open())
+    {
+        while ( getline (fajl,linija) )
+        {
+            cout << linija << '\n';
 
+        }
+        fajl.close();
+    }
+
+    else
+        cout << "Error #1";
+
+}
 #endif // MOCI_HPP_INCLUDED

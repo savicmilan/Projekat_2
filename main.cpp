@@ -18,6 +18,7 @@ int main()
 {
     cout << "Hello world!" << endl;
     Moc djuro[3];
-    citajMoci(djuro);
+    citajFaijlMoci(djuro);
+    //citajMoci(djuro);
     return 0;
 }
